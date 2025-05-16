@@ -169,7 +169,7 @@ main {
 
                 article {
                     position: relative;
-                    min-width: 340px;
+                    min-width: 320px;
                     height: 251px;
                     border-radius: 15px;
                     background-color: #ffffff;
@@ -206,7 +206,7 @@ main {
                     }
 
                     .text-card {
-                        margin-left: 19px;
+                        padding-left: 19px;
                         margin-top: 16px;
                         display: flex;
                         flex-direction: column;

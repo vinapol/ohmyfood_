@@ -13,7 +13,7 @@
 
 .main-container {
   max-width: 1480px;
-  min-width: 320px;
+  min-width: 340px;
   display: flex;
   flex-wrap: wrap;
   background-color: #f6f6f6;
@@ -294,7 +294,7 @@ main section div a {
 }
 main section div a article {
   position: relative;
-  min-width: 340px;
+  min-width: 320px;
   height: 251px;
   border-radius: 15px;
   background-color: #ffffff;
@@ -326,7 +326,7 @@ main section div a article .new p {
   margin: auto;
 }
 main section div a article .text-card {
-  margin-left: 19px;
+  padding-left: 19px;
   margin-top: 16px;
   display: flex;
   flex-direction: column;
