@@ -13,11 +13,259 @@
 
 .main-container {
   max-width: 1480px;
-  min-width: 340px;
+  min-width: 320px;
   display: flex;
   flex-wrap: wrap;
   background-color: #f6f6f6;
   margin: auto;
+}
+
+.button:hover {
+  filter: brightness(1.2);
+  box-shadow: 0px 2px 10px -4px rgba(0, 0, 0, 0.5);
+}
+
+.command:hover {
+  display: flex;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.plate::after {
+  content: "\f058";
+  position: relative;
+  top: 0;
+  right: 0;
+  color: #ffffff;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  font-size: 25px;
+  justify-content: center;
+  align-items: center;
+  width: 0;
+  height: 0;
+  background: var(--new-background);
+  border-radius: 0px 15px 15px 0px;
+  visibility: hidden;
+  overflow: hidden;
+  display: inline-flex;
+  transition: width 0.3s ease;
+}
+
+.plate:hover::after {
+  visibility: visible;
+  width: 59px;
+  height: 72px;
+}
+
+.loader {
+  position: fixed;
+  display: flex;
+  z-index: 100;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  animation: loaderEnd 4s ease forwards;
+  animation-delay: 4s;
+}
+.loader .load {
+  width: 100px;
+  height: 100px;
+  border-radius: 180px;
+  border: 6px solid var(--dark-grey);
+  border-top-color: var(--primary);
+  animation: loader 3s linear;
+  animation-iteration-count: 200;
+}
+
+@keyframes loader {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loaderEnd {
+  to {
+    opacity: 0;
+    z-index: -100;
+    visibility: hidden;
+  }
+}
+.fa-heart {
+  scale: 2;
+  position: absolute;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 400;
+  font-size: 19px;
+  color: #000000;
+  visibility: visible;
+}
+
+.fa-heart::after {
+  content: "\f004";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  background: var(--button-color);
+  background-clip: text;
+  transform: scale(0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.5s;
+}
+
+#like:checked + .fa-heart::after {
+  transform: scale(1);
+  font-size: 19px;
+  visibility: visible;
+}
+
+#like-1:checked + .fa-heart::after {
+  transform: scale(1);
+  font-size: 19px;
+  visibility: visible;
+}
+
+#like-2:checked + .fa-heart::after {
+  transform: scale(1);
+  font-size: 19px;
+  visibility: visible;
+}
+
+#like-3:checked + .fa-heart::after {
+  transform: scale(1);
+  font-size: 19px;
+  visibility: visible;
+}
+
+#like-4:checked + .fa-heart::after {
+  transform: scale(1);
+  font-size: 19px;
+  visibility: visible;
+}
+
+.button {
+  text-align: center;
+  color: #ffffff;
+  padding: 16px 49px;
+  font-size: 16px;
+  border-radius: 50px;
+  height: 50px;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 57px;
+  border: 0px solid transparent;
+  background: var(--button-color);
+  font-weight: 500;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  width: 93%;
+  max-width: 490px;
+}
+a article {
+  position: relative;
+  min-width: 320px;
+  height: 251px;
+  border-radius: 15px;
+  background-color: #ffffff;
+}
+a article .resto-image {
+  margin-top: 0px;
+  width: 100%;
+  height: 70%;
+}
+a article .resto-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+a article .new {
+  width: 80px;
+  height: 29px;
+  border-radius: 2px;
+  background-color: var(--new-background);
+  color: var(--new-font-color);
+  position: absolute;
+  top: 10px;
+  right: 13px;
+}
+a article .new p {
+  font-size: 14px;
+  margin: auto;
+}
+a article .text-card {
+  padding-left: 19px;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+a article .text-card h3 {
+  font-size: 18px;
+  line-height: 20px;
+}
+a article .text-card p {
+  line-height: 0px;
+  font-size: 17px;
+}
+a article label {
+  position: absolute;
+  bottom: 33px;
+  right: 25px;
+}
+
+.step-card {
+  display: flex;
+  flex-direction: row;
+  width: 322.49px;
+  height: 72.38px;
+  margin-top: 26px;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  box-shadow: 0px 2px 15px #d6d6d6;
+}
+.step-card p {
+  font-size: 16px;
+  font-weight: 500;
+  margin: auto;
+  margin-left: 20px;
+}
+.step-card .number-circle {
+  position: relative;
+  height: 24px;
+  width: 24px;
+  top: 25px;
+  left: -12px;
+  background-color: var(--primary);
+  color: #ffffff;
+  border-radius: 180px;
+}
+.step-card .number-circle p {
+  line-height: 24px;
+  margin: auto;
+  margin-left: 8px;
+}
+.step-card i {
+  margin-top: 28px;
+  margin-left: 21.98px;
+  color: #7E7E7E;
 }
 
 header {
@@ -41,6 +289,11 @@ header nav img {
   margin: auto;
 }
 
+@media (min-width: 768px) {
+  header nav {
+    box-shadow: none;
+  }
+}
 footer {
   width: 100%;
   display: flex;
@@ -72,9 +325,6 @@ footer div a i {
 }
 
 @media (min-width: 768px) {
-  header nav {
-    box-shadow: none;
-  }
   footer {
     flex-direction: row-reverse;
   }
@@ -87,60 +337,6 @@ footer div a i {
   }
   footer div a {
     width: 10;
-  }
-}
-:root {
-  --primary: #9356dc;
-  --button-color: linear-gradient(to bottom right, #FF79DA, var(--primary));
-  --new-background: #99E2D0;
-  --new-font-color: #008766;
-}
-
-.button:hover {
-  filter: brightness(1.2);
-  box-shadow: 0px 2px 10px -4px rgba(0, 0, 0, 0.5);
-}
-
-#like:checked + .fa-heart {
-  font-weight: 900;
-  background: var(--button-color);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-#like-2:checked + .fa-heart {
-  font-weight: 900;
-  background: var(--button-color);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-#like-3:checked + .fa-heart {
-  font-weight: 900;
-  background: var(--button-color);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-#like-4:checked + .fa-heart {
-  font-weight: 900;
-  background: var(--button-color);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.command:hover {
-  display: flex;
-}
-
-@keyframes fadeUp {
-  to {
-    opacity: 1;
-    transform: translateX(0);
   }
 }
 .location {
@@ -178,32 +374,18 @@ footer div a i {
   margin-top: 20px;
   font-size: 18px;
 }
-.introduction .button {
-  text-align: center;
-  color: #ffffff;
-  padding: 13px 16px;
-  font-size: 16px;
-  border-radius: 50px;
-  height: 50px;
-  margin: auto;
-  margin-top: 27px;
-  margin-bottom: 57px;
-  border: 0px solid transparent;
-  background: var(--button-color);
-  font-weight: 500;
-}
 .introduction .button a {
   color: #ffffff;
   text-decoration: none;
 }
 
-aside {
+.presentation {
   width: 100%;
   background-color: #ffffff;
   display: flex;
   justify-content: center;
 }
-aside .function {
+.presentation .function {
   width: 100%;
   max-width: 1080px;
   display: flex;
@@ -211,53 +393,18 @@ aside .function {
   justify-content: center;
   padding-bottom: 50px;
 }
-aside .function h2 {
+.presentation .function h2 {
   width: 100%;
   margin-top: 48px;
   padding-left: 20px;
   font-size: 24px;
   font-weight: 700;
 }
-aside .function .steps {
+.presentation .function .steps {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-aside .function .steps .step-card {
-  display: flex;
-  flex-direction: row;
-  width: 322.49px;
-  height: 72.38px;
-  margin-top: 26px;
-  background-color: #f6f6f6;
-  border-radius: 20px;
-  box-shadow: 0px 2px 15px #d6d6d6;
-}
-aside .function .steps .step-card p {
-  font-size: 16px;
-  font-weight: 500;
-  margin: auto;
-  margin-left: 20px;
-}
-aside .function .steps .step-card .number-circle {
-  position: relative;
-  height: 24px;
-  width: 24px;
-  top: 25px;
-  left: -12px;
-  background-color: var(--primary);
-  color: #ffffff;
-  border-radius: 180px;
-}
-aside .function .steps .step-card .number-circle p {
-  line-height: 24px;
-  margin: auto;
-  margin-left: 8px;
-}
-aside .function .steps .step-card i {
-  margin-top: 28px;
-  margin-left: 21.98px;
-  color: #7E7E7E;
+  gap: 25px;
 }
 
 main {
@@ -286,65 +433,6 @@ main section div {
   flex-wrap: wrap;
   justify-content: center;
 }
-main section div a {
-  color: inherit;
-  text-decoration: none;
-  width: 93%;
-  max-width: 490px;
-}
-main section div a article {
-  position: relative;
-  min-width: 320px;
-  height: 251px;
-  border-radius: 15px;
-  background-color: #ffffff;
-}
-main section div a article .resto-image {
-  margin-top: 0px;
-  width: 100%;
-  height: 70%;
-}
-main section div a article .resto-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-}
-main section div a article .new {
-  width: 80px;
-  height: 29px;
-  border-radius: 2px;
-  background-color: var(--new-background);
-  color: var(--new-font-color);
-  position: absolute;
-  top: 10px;
-  right: 13px;
-}
-main section div a article .new p {
-  font-size: 14px;
-  margin: auto;
-}
-main section div a article .text-card {
-  padding-left: 19px;
-  margin-top: 16px;
-  display: flex;
-  flex-direction: column;
-}
-main section div a article .text-card h3 {
-  font-size: 18px;
-  line-height: 20px;
-}
-main section div a article .text-card p {
-  line-height: 0px;
-  font-size: 17px;
-}
-main section div a article label {
-  position: absolute;
-  bottom: 33px;
-  right: 25px;
-  scale: 2;
-}
 
 @media (min-width: 768px) {
   .location {
@@ -357,5 +445,3 @@ main section div a article label {
     align-items: center;
   }
 }
-
-/*# sourceMappingURL=index.css.map */

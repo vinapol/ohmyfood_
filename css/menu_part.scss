@@ -1,0 +1,17 @@
+h2 {
+    font-weight: 300;
+    font-size: 16px;
+    margin-top: 40px;
+    margin-left: 13px;
+    position: relative;
+}
+
+h2::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0px;
+    width: 40px;
+    height: 3px;
+    background-color: var(--new-background);
+}

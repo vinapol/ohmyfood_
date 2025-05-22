@@ -1,5 +1,12 @@
 @use 'block.scss';
 @use 'animation.scss';
+@use 'loader.scss';
+@use 'heart.scss';
+@use 'button.scss';
+@use 'resto_card.scss';
+@use 'steps.scss';
+@use 'nav.scss';
+@use 'footer.scss';
 
 .location {
     display: flex;
@@ -43,19 +50,6 @@
     }
 
     .button {
-        text-align: center;
-        color: #ffffff;
-        padding: 13px 16px;
-        font-size: 16px;
-        border-radius: 50px;
-        height: 50px;
-        margin: auto;
-        margin-top: 27px;
-        margin-bottom: 57px;
-        border: 0px solid transparent;
-        background: var(--button-color);
-        font-weight: 500;
-
         a {
             color: #ffffff;
             text-decoration: none;
@@ -63,7 +57,7 @@
     }
 }
 
-aside {
+.presentation {
     width: 100%;
     background-color: #ffffff;
     display: flex;
@@ -89,47 +83,9 @@ aside {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            gap: 25px;
 
-            .step-card {
-                display: flex;
-                flex-direction: row;
-                width: 322.49px;
-                height: 72.38px;
-                margin-top: 26px;
-                background-color: #f6f6f6;
-                border-radius: 20px;
-                box-shadow: 0px 2px 15px #d6d6d6;
 
-                p {
-                    font-size: 16px;
-                    font-weight: 500;
-                    margin: auto;
-                    margin-left: 20px;
-                }
-
-                .number-circle {
-                    position: relative;
-                    height: 24px;
-                    width: 24px;
-                    top: 25px;
-                    left: -12px;
-                    background-color: var(--primary);
-                    color: #ffffff;
-                    border-radius: 180px;
-
-                    p {
-                        line-height: 24px;
-                        margin: auto;
-                        margin-left: 8px;
-                    }
-                }
-
-                i {
-                    margin-top: 28px;
-                    margin-left: 21.98px;
-                    color: #7E7E7E;
-                }
-            }
         }
     }
 }
@@ -160,78 +116,6 @@ main {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-
-            a {
-                color: inherit;
-                text-decoration: none;
-                width: 93%;
-                max-width: 490px;
-
-                article {
-                    position: relative;
-                    min-width: 320px;
-                    height: 251px;
-                    border-radius: 15px;
-                    background-color: #ffffff;
-
-
-                    .resto-image {
-                        margin-top: 0px;
-                        width: 100%;
-                        height: 70%;
-
-                        img {
-                            width: 100%;
-                            height: 100%;
-                            object-fit: cover;
-                            border-top-left-radius: 15px;
-                            border-top-right-radius: 15px;
-                        }
-                    }
-
-                    .new {
-                        width: 80px;
-                        height: 29px;
-                        border-radius: 2px;
-                        background-color: var(--new-background);
-                        color: var(--new-font-color);
-                        position: absolute;
-                        top: 10px;
-                        right: 13px;
-
-                        p {
-                            font-size: 14px;
-                            margin: auto;
-                        }
-                    }
-
-                    .text-card {
-                        padding-left: 19px;
-                        margin-top: 16px;
-                        display: flex;
-                        flex-direction: column;
-
-                        h3 {
-                            font-size: 18px;
-                            line-height: 20px;
-                        }
-
-                        p {
-                            line-height: 0px;
-                            font-size: 17px;
-                        }
-
-                    }
-
-                    label {
-                        position: absolute;
-                        bottom: 33px;
-                        right: 25px;
-                        scale: 2;
-                    }
-
-                }
-            }
         }
     }
 }
