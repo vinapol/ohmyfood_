@@ -1,3 +1,4 @@
+@use 'block.scss';
 .step-card {
                 display: flex;
                 flex-direction: row;
@@ -38,3 +39,9 @@
                     color: #7E7E7E;
                 }
             }
+
+.step-card:hover{
+    i{
+        color: var(--primary);
+    }
+}
