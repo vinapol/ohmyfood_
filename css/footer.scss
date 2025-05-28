@@ -20,7 +20,7 @@ footer {
         flex-direction: column;
         gap: 7px;
         margin-top: 16px;
-
+        margin-right: 60px;
 
         a {
             color: #ffffff;
@@ -38,17 +38,10 @@ footer {
 
     footer {
         flex-direction: row-reverse;
-
         div {
-            width: none;
             display: flex;
             flex-direction: row;
-            margin-right: 60px;
             margin-top: 0px;
-
-            a {
-                width: 10;
-            }
         }
     }
 }

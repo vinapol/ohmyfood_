@@ -180,6 +180,7 @@ footer div {
   flex-direction: column;
   gap: 7px;
   margin-top: 16px;
+  margin-right: 60px;
 }
 footer div a {
   color: #ffffff;
@@ -195,14 +196,9 @@ footer div a i {
     flex-direction: row-reverse;
   }
   footer div {
-    width: none;
     display: flex;
     flex-direction: row;
-    margin-right: 60px;
     margin-top: 0px;
-  }
-  footer div a {
-    width: 10;
   }
 }
 .all_plates .plate {
@@ -327,10 +323,12 @@ section img {
 }
 .main-container main section div h1 {
   font-family: "Shrikhand", normal;
+  font-size: 28px;
+  font-weight: 400;
 }
 .main-container main section div label {
-  top: 10px;
-  left: 265px;
+  top: 13.5px;
+  left: 300px;
 }
 .main-container main section article {
   width: 100%;

@@ -10,14 +10,14 @@
     justify-content: center;
     align-items: center;
     animation: loaderEnd 2s  ease forwards;
-    animation-delay: 4s;
+    animation-delay: 1s;
     .load {
         width: 100px;
         height: 100px;
         border-radius: 180px;
         border: 6px solid var(--dark-grey);
         border-top-color: var(--primary);
-        animation: loader 2s linear;
+        animation: loader 3s linear;
         animation-iteration-count: 200;
     }
 

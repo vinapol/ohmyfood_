@@ -53,7 +53,7 @@
   visibility: hidden;
   overflow: hidden;
   display: inline-flex;
-  transition: width 0.6s ease;
+  transition: width 0.8s ease;
 }
 
 .plate:hover::after {
@@ -72,7 +72,7 @@
   justify-content: center;
   align-items: center;
   animation: loaderEnd 2s ease forwards;
-  animation-delay: 4s;
+  animation-delay: 1s;
 }
 .loader .load {
   width: 100px;
@@ -80,7 +80,7 @@
   border-radius: 180px;
   border: 6px solid var(--dark-grey);
   border-top-color: var(--primary);
-  animation: loader 2s linear;
+  animation: loader 3s linear;
   animation-iteration-count: 200;
 }
 
@@ -171,32 +171,32 @@
   font-weight: 500;
 }
 
-a {
+.resto {
   color: inherit;
   text-decoration: none;
   width: 93%;
   max-width: 490px;
 }
-a article {
+.resto article {
   position: relative;
   min-width: 320px;
   height: 251px;
   border-radius: 15px;
   background-color: #ffffff;
 }
-a article .resto-image {
+.resto article .resto-image {
   margin-top: 0px;
   width: 100%;
   height: 70%;
 }
-a article .resto-image img {
+.resto article .resto-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
-a article .new {
+.resto article .new {
   width: 80px;
   height: 29px;
   border-radius: 2px;
@@ -206,26 +206,26 @@ a article .new {
   top: 10px;
   right: 13px;
 }
-a article .new p {
+.resto article .new p {
   font-size: 14px;
   margin: auto;
 }
-a article .text-card {
+.resto article .text-card {
   padding-left: 19px;
   margin-top: 16px;
   display: flex;
   flex-direction: column;
   width: 200px;
 }
-a article .text-card h3 {
+.resto article .text-card h3 {
   font-size: 18px;
   line-height: 20px;
 }
-a article .text-card p {
+.resto article .text-card p {
   line-height: 0px;
   font-size: 17px;
 }
-a article label {
+.resto article label {
   position: absolute;
   bottom: 33px;
   right: 25px;
@@ -318,6 +318,7 @@ footer div {
   flex-direction: column;
   gap: 7px;
   margin-top: 16px;
+  margin-right: 60px;
 }
 footer div a {
   color: #ffffff;
@@ -333,14 +334,9 @@ footer div a i {
     flex-direction: row-reverse;
   }
   footer div {
-    width: none;
     display: flex;
     flex-direction: row;
-    margin-right: 60px;
     margin-top: 0px;
-  }
-  footer div a {
-    width: 10;
   }
 }
 .location {
