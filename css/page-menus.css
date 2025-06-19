@@ -5,10 +5,10 @@
 
 :root {
   --primary: #9356dc;
-  --button-color: linear-gradient(to bottom right, #FF79DA, var(--primary));
-  --new-background: #99E2D0;
+  --button-color: linear-gradient(to bottom right, #ff79da, var(--primary));
+  --new-background: #99e2d0;
   --new-font-color: #008766;
-  --dark-grey: #353535 ;
+  --dark-grey: #353535;
 }
 
 .main-container {
@@ -66,7 +66,7 @@
   scale: 2;
   position: absolute;
   font-family: "Font Awesome 6 Free";
-  font-weight: 400;
+  font-weight: 100;
   font-size: 19px;
   color: #000000;
   visibility: visible;

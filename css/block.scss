@@ -1,21 +1,21 @@
 * {
-    margin: 0px;
-    font-family: 'Roboto', italic;
+  margin: 0px;
+  font-family: "Roboto", italic;
 }
 
 :root {
-    --primary: #9356dc;
-    --button-color: linear-gradient(to bottom right, #FF79DA, var(--primary));
-    --new-background: #99E2D0;
-    --new-font-color: #008766;
-    --dark-grey: #353535
+  --primary: #9356dc;
+  --button-color: linear-gradient(to bottom right, #ff79da, var(--primary));
+  --new-background: #99e2d0;
+  --new-font-color: #008766;
+  --dark-grey: #353535;
 }
 
 .main-container {
-    max-width: 1480px;
-    min-width: 320px;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #f6f6f6;
-    margin: auto;
+  max-width: 1480px;
+  min-width: 320px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f6f6f6;
+  margin: auto;
 }

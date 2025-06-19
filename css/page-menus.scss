@@ -1,99 +1,86 @@
-@use 'block.scss';
-@use 'animation.scss';
-@use 'heart.scss';
-@use 'button.scss';
-@use 'nav.scss';
-@use 'footer.scss';
-@use 'plates.scss';
-@use 'menu_part.scss';
-@use 'page_menu_img.scss';
+@use "block.scss";
+@use "animation.scss";
+@use "heart.scss";
+@use "button.scss";
+@use "nav.scss";
+@use "footer.scss";
+@use "plates.scss";
+@use "menu_part.scss";
+@use "page_menu_img.scss";
 
 .main-container {
+  margin: auto;
+  background-color: #ffffff;
+
+  header {
+    height: 63px;
+
+    nav {
+      justify-content: center;
+      position: relative;
+
+      i {
+        position: absolute;
+        scale: 2;
+        color: #000000;
+        top: 25px;
+        left: 25px;
+      }
+
+      img {
+        align-self: center;
+      }
+    }
+  }
+  main {
     margin: auto;
-    background-color: #ffffff;
+    width: 100%;
+    max-width: 1221px;
+    background-color: #f6f6f6;
+    display: flex;
+    margin-top: -70px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
 
-    header {
-        height: 63px;
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      max-width: 635px;
 
-
-        nav {
-            justify-content: center;
-            position: relative;
-
-            i {
-                position: absolute;
-                scale: 2;
-                color: #000000;
-                top: 25px;
-                left: 25px;
-            }
-
-            img {
-
-                align-self: center;
-            }
-        }
-    }
-    main {
-        margin: auto;
-        width: 100%;
-        max-width: 1221px;
-        background-color: #f6f6f6;
+      div {
         display: flex;
-        margin-top: -70px;
-        border-top-left-radius: 40px;
-        border-top-right-radius: 40px;
+        position: relative;
+        flex-direction: row;
+        margin-top: 32px;
+        margin-left: 17px;
 
-
-
-        section {
-            display: flex;
-            flex-wrap: wrap;
-            width: 100%;
-            max-width: 635px;
-
-
-
-            div {
-                display: flex;
-                position: relative;
-                flex-direction: row;
-                margin-top: 32px;
-                margin-left: 17px;
-
-
-                h1 {
-                    font-family: 'Shrikhand', normal;
-                    font-size: 28px;
-                    font-weight: 400;
-                }
-
-                label {
-                    top: 13.5px;
-                    left: 300px;
-                }
-
-            }
-
-            article {
-                width: 100%;
-                max-width: 635px;
-            }
+        h1 {
+          font-family: "Shrikhand", normal;
+          font-size: 28px;
+          font-weight: 400;
         }
 
+        label {
+          top: 13.5px;
+          left: 300px;
+        }
+      }
 
+      article {
+        width: 100%;
+        max-width: 635px;
+      }
     }
+  }
 }
 
 @media (min-width: 768px) {
-    main {
-        justify-content: center;
+  main {
+    justify-content: center;
 
-        section {
-
-            justify-content: center;
-        }
-
-
+    section {
+      justify-content: center;
     }
+  }
 }

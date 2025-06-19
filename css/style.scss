@@ -1,139 +1,137 @@
-@use 'block.scss';
-@use 'animation.scss';
-@use 'loader.scss';
-@use 'heart.scss';
-@use 'button.scss';
-@use 'resto_card.scss';
-@use 'steps.scss';
-@use 'nav.scss';
-@use 'footer.scss';
+@use "block.scss";
+@use "animation.scss";
+@use "loader.scss";
+@use "heart.scss";
+@use "button.scss";
+@use "resto_card.scss";
+@use "steps.scss";
+@use "nav.scss";
+@use "footer.scss";
 
 .location {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  background-color: #eaeaea;
+  box-shadow: 0px 2px 10px -4px rgba($color: #000000, $alpha: 0.5);
+
+  div {
     display: flex;
-    width: 100%;
-    height: 50px;
-    background-color: #EAEAEA;
-    box-shadow: 0px 2px 10px -4px rgba($color: #000000, $alpha: 0.5);
+    flex-direction: row;
+    margin: auto;
+    gap: 17px;
+    color: var(--dark-grey);
 
-    div {
-        display: flex;
-        flex-direction: row;
-        margin: auto;
-        gap: 17px;
-        color: var(--dark-grey);
-
-        p {
-            font-size: 16px;
-        }
+    p {
+      font-size: 16px;
     }
+  }
 }
 
 .introduction {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+  div {
     width: 100%;
+    text-align: center;
 
-
-    div {
-        width: 100%;
-        text-align: center;
-
-        h1 {
-            margin: 0px 50px;
-            margin-top: 50px;
-        }
-
-        p {
-            margin-top: 20px;
-            font-size: 18px;
-        }
+    h1 {
+      margin: 0px 50px;
+      margin-top: 50px;
     }
 
-    .button {
-        a {
-            color: #ffffff;
-            text-decoration: none;
-        }
+    p {
+      margin-top: 20px;
+      font-size: 18px;
     }
+  }
+
+  .button {
+    a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+  }
 }
 
 .presentation {
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+
+  .function {
     width: 100%;
-    background-color: #ffffff;
+    max-width: 1080px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    padding-bottom: 50px;
 
-    .function {
-        width: 100%;
-        max-width: 1080px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding-bottom: 50px;
-
-        h2 {
-            width: 100%;
-            margin-top: 48px;
-            padding-left: 20px;
-            font-size: 24px;
-            font-weight: 700;
-        }
-
-        .steps {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 25px;
-
-
-        }
+    h2 {
+      width: 100%;
+      margin-top: 48px;
+      padding-left: 20px;
+      font-size: 24px;
+      font-weight: 700;
     }
+
+    .steps {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+        
+    }
+  }
 }
 
 main {
-    width: 100%;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+
+  section {
     justify-content: center;
     display: flex;
+    flex-wrap: wrap;
+    max-width: 1080px;
+    margin-bottom: 54px;
 
-    section {
-        justify-content: center;
-        display: flex;
-        flex-wrap: wrap;
-        max-width: 1080px;
-        margin-bottom: 54px;
-
-        h2 {
-            width: 100%;
-            padding-left: 20px;
-            margin-top: 54px;
-            margin-bottom: 28px;
-        }
-
-        div {
-            width: 100%;
-            max-width: 1080px;
-            gap: 18px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
+    h2 {
+      width: 100%;
+      padding-left: 20px;
+      margin-top: 54px;
+      margin-bottom: 28px;
     }
+
+    div {
+      width: 100%;
+      max-width: 1080px;
+      gap: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
 }
 
-@media (min-width: 768px) {
-    .location {
-        box-shadow: none;
+@media (min-width: 1024px) {
+  .location {
+    box-shadow: none;
+  }
+  
+  .presentation {
+    .function {
+      .steps {
+        flex-direction: row;
+        gap: 20px;
+      }
     }
+  }
 
-    aside {
-        .function {
-            .steps {
-                gap: 25px;
-            }
-        }
-    }
-
-    main {
-        align-items: center; 
-    }
+  main {
+    align-items: center;
+  }
 }
